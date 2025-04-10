@@ -31,7 +31,7 @@ body {
         background-repeat:no-repeat ;
         text-align: center;
         background-position:left center , right center;
-        /*opacity: 0.8;*/
+        /*opacity: 0.3;*/
     }
 
     h1 {
@@ -46,25 +46,26 @@ body {
         background-position: center;
     }
 
-    .button {
-      padding: 12px 24px;
-      font-size: 18px;
-      cursor: pointer;
-      background: linear-gradient(to right, #ff4081, #ff80ab);
-      color: pink;
-      border: none;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: transform 0.2s ease;
-      animation: fadeIn 1s ease-in-out;
+    #button {
+    display: inline-block; /* 使按鈕顯示為行內塊 */
+    width: 200px; /* 固定按鈕寬度 */
+    height: 50px; /* 固定按鈕高度 */
+    padding: 10px; /* 按鈕內邊距 */
+    background: linear-gradient(to left , pink, rgb(248, 90, 116) ); /* 按鈕背景顏色 */
+    color: #ffffff; /* 按鈕文字顏色 */
+    text-decoration: none; /* 移除下劃線 */
+    border-radius: 5px; /* 按鈕圓角 */
+    font-size: 1.2em; /* 按鈕文字大小 */
+    transition: 1s ease; /* 背景顏色過渡效果 */
+    line-height: 50px; /* 垂直置中 */
+    animation: 1s ease-in-out;
+    
+}
 
-    }
-
-    button:hover {
-      transform: scale(1.05);
-      background: linear-gradient(to right, #ff80ab, #ff4081);
-    }
-
+#button:hover {
+    background:linear-gradient(180deg , pink, rgb(248, 90, 116) ); /* 滑鼠懸停時改變背景顏色 */
+    transform: scale(1.05);
+}
     li {
         list-style-type: none;
     }
@@ -72,7 +73,7 @@ body {
 </style>
 <body>  
     <div>
-        <li><a href="https://youtu.be/dQw4w9WgXcQ?si=WAAXGP3C0eI9XpLW" class="button">你好</a></li><hr>
-        <img src="https://louis01445.github.io/wed3/fffff.jpg" id="image">
+        <li><a href="https://youtu.be/dQw4w9WgXcQ?si=WAAXGP3C0eI9XpLW" id="button" target="_blank">你好</a></li><hr>
+        <img src="https://louis01445.github.io/wed3/fffff.jpg" id="image" alt="動漫圖片">
     <h1>去背 線性建城 使用css</h1></div>
 </body>
